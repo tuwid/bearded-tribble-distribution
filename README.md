@@ -1,4 +1,4 @@
-bearded-tribble-distribution
+
 A fair distribution algorithm in python to spread different services with different weights in different nodes  
 
 i had this problem some days ago while designign my new monitoring system
