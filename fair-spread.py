@@ -1,14 +1,19 @@
 #!/usr/bin/python
 from random import randint
 
-# kemi x sherbime ku secili ka nje peshe te caktuar ne sistem 
-# dhe duhen shprendare midis N nyjeve
-# menyra me e hajrit qe me vajti ne mendje eshte kjo qe kam shpjeguar me poshte
+# i had this problem some days ago while designign my new monitoring system
+# we have X service to monitor and each of them has a specific weight to monitor
+# weight as in how much CPU/Network/IO would spend to monitor
+# and the number of service had to be eavenly distributed in N servers that would 
+# server as monitors 
 
-#1 -  mblidhet shuma e peshave te sherbimeve
-#2 -  pjestohet per nr e nyjeve
-#3 -  radhiten sherbimet sipas peshes
-#4 -  nis shprendarja nepermjet nyjeve
+# so I wrote a solution for my problem and thought it might come in help somebody
+
+# 1 - we sum the weights of our services 
+# 2 - we get the ratio ( sum_of_weighs/nr_of_servers_we_have_to_do_checks)
+# 3 - we sort according to the heaviest 
+# 4 - start a card like distribution but when someone reaches we will skip him
+
 
 
 # nr i nyjeve N
@@ -25,7 +30,7 @@ from random import randint
 #7	 10			http_load
 
 
-# marrim sherbimet ( kto i kam gjeneruar random)
+# we get the services ( randomly generated ) 
 
 # (0, 3)
 # (1, 2)
