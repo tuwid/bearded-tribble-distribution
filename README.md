@@ -16,32 +16,32 @@ so I wrote a solution for my problem and thought it might come in help somebody
 
 
 
-```nr i nyjeve N```
+nr i nyjeve N
 
-``` index	 weight 	type```
+* index	 weight 	type
 
-```0	 1			ping```
-```1	 2			pop_check```
-```2	 2			smtp_check```
-```3	 2			blacklist```
-```4	 3			http_status```
-```5	 3			http_content```
-```6	 3			http_title```
-```7	 10			http_load```
+* 0	 1			ping
+* 1	 2			pop_check
+* 2	 2			smtp_check
+* 3	 2			blacklist
+* 4	 3			http_status
+* 5	 3			http_content
+* 6	 3			http_title
+* 7	 10			http_load
 
 
-```we get the services ( randomly generated ) ```
+* we get the services ( randomly generated ) 
 
-```(0, 3)```
-```(1, 2)```
-```(2, 3)```
-```(3, 10)```
-```(4, 10)```
-```(5, 3)```
-```(6, 2)```
-```(7, 2)```
+* (0, 3)
+* (1, 2)
+* (2, 3)
+* (3, 10)
+* (4, 10)
+* (5, 3)
+* (6, 2)
+(7, 2)
 
-```i rendisim
+* i rendisim
 
 * (1, 2)
 * (6, 2)
