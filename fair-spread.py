@@ -4,14 +4,14 @@ from random import randint
 # i had this problem some days ago while designign my new monitoring system
 # we have X service to monitor and each of them has a specific weight to monitor
 # weight as in how much CPU/Network/IO would spend to monitor
-# and the number of service had to be eavenly distributed in N servers that would 
-# server as monitors 
+# and the number of service had to be eavenly distributed in N servers that would
+# server as monitors
 
 # so I wrote a solution for my problem and thought it might come in help somebody
 
-# 1 - we sum the weights of our services 
+# 1 - we sum the weights of our services
 # 2 - we get the ratio ( sum_of_weighs/nr_of_servers_we_have_to_do_checks)
-# 3 - we sort according to the heaviest 
+# 3 - we sort according to the heaviest
 # 4 - start a card like distribution but when someone reaches we will skip him
 
 
@@ -30,7 +30,7 @@ from random import randint
 #7	 10			http_load
 
 
-# we get the services ( randomly generated ) 
+# we get the services ( randomly generated )
 
 # (0, 3)
 # (1, 2)
@@ -93,7 +93,7 @@ s_sorted = []
 
 total_weight = 0
 
-N = 2
+N = 5
 
 
 # gjenerojme ca sherbime random
@@ -104,21 +104,21 @@ for i in range(0,30):
 	if tmp == 1:
 		#print i," ",1
 		services.append([i,1])
-		total_weight += 1 
+		total_weight += 1
 	if tmp > 1 and tmp <= 5:
 		#print i," ",2
 		services.append([i,2])
-		total_weight += 2 
+		total_weight += 2
 	if tmp > 5 and tmp <= 7:
 		#print i," ",3
 		services.append([i,3])
-		total_weight += 3 
+		total_weight += 3
 	if tmp > 7:
 		#print i," ",10
 		services.append([i,10])
-		total_weight += 10 
+		total_weight += 10
 
-for k, v in sorted(services, key=lambda(k, v): v): 
+for k, v in sorted(services, key=lambda(k, v): v):
 	#print(k, v)
 	s_sorted.append([k, v])
 
@@ -137,7 +137,7 @@ node_weight = []
 for nr in range(0,N):
 	nodes.append([])
 	node_weight.append(0)
-	
+
 node_index = 0
 
 

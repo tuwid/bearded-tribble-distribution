@@ -18,69 +18,69 @@ so I wrote a solution for my problem and thought it might come in help somebody
 
 nr i nyjeve N
 
-* index	 weight 	type
+        * index	 weight 	type
 
-* 0	 1			ping
-* 1	 2			pop_check
-* 2	 2			smtp_check
-* 3	 2			blacklist
-* 4	 3			http_status
-* 5	 3			http_content
-* 6	 3			http_title
-* 7	 10			http_load
+        * 0	 1			ping
+        * 1	 2			pop_check
+        * 2	 2			smtp_check
+        * 3	 2			blacklist
+        * 4	 3			http_status
+        * 5	 3			http_content
+        * 6	 3			http_title
+        * 7	 10			http_load
 
 
 * we get the services ( randomly generated ) 
 
-* (0, 3)
-* (1, 2)
-* (2, 3)
-* (3, 10)
-* (4, 10)
-* (5, 3)
-* (6, 2)
-(7, 2)
+        * (0, 3)
+        * (1, 2)
+        * (2, 3)
+        * (3, 10)
+        * (4, 10)
+        * (5, 3)
+        * (6, 2)
+        * (7, 2)
 
 * i rendisim
 
-* (1, 2)
-* (6, 2)
-* (7, 2)
-* (0, 3)
-* (2, 3)
-* (5, 3)
-* (3, 10)
-* (4, 10)
+        * (1, 2)
+        * (6, 2)
+        * (7, 2)
+        * (0, 3)
+        * (2, 3)
+        * (5, 3)
+        * (3, 10)
+        * (4, 10)
 
 * llogarisim shprendarjen per N=3 nyje
 
-* totali 6 + 9 + 20 = 35
-* 35 / 3 = 11.6 =~ 12
+        * totali 6 + 9 + 20 = 35
+        * 35 / 3 = 11.6 =~ 12
 
 * nyja e fundit ose do kete pak me shume/pak
 
 
-* target: (varianti 1)
-* 13		 	13				9
-* --------------------------------
+        * target: (varianti 1)
+        * 13		 	13				9
+        * --------------------------------
 
 * duke nisur qe nga fundit heqim te medhajat dhe shprendajme
 
-* 10			10				3
-* 3 			 3 				3
-* -				 -				2
-* - 			 -				2
-* --------------------------------
-* 13			13				9
-* DONE
+        * 10	|		10		|		3|
+        * 3 	|		 3 		|		3|
+        * -		|		 -		|		2|
+        * - 	|		 -		|		2|
+        * -------------------------------|
+        * 13	|		13		|		9|
+        * DONE
 
-* target: (varianti 2)
-* 12		 	12				11
-* --------------------------------
-* 10			10				3
-* 3 			 3 				3
-* -				 -				2
-* - 			 -				2
-* --------------------------------
-* 13			13				9
-* DONE
+        * target: (varianti 2)
+        * 12	|	 	12		|		11|
+        * --------------------------------
+        * 10	|		10		|		3|
+        * 3 	|		 3 		|		3|
+        * -		|		 -		|		2|
+        * - 	|		 -		|		2|
+        * --------------------------------|
+        * 13			13				9
+        * DONE
